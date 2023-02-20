@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int main()
+{
+	vector<string>c{"Latvia ", "Estonia ", "Sweden ", "Norway ", "Denmark "};
+
+			c.pop_back();
+			c.push_back("Denmark ");
+				cout << c.back();
+				cout << c.front(); 
+
+	return 0;
+}
