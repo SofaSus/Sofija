@@ -1,4 +1,4 @@
-1. uzdevums
+1. uzdevums:
 
 #include <iostream>
 #include <vector>
@@ -16,7 +16,8 @@ int main()
 	return 0;
 }
 
-2. uzdevums
+
+2. uzdevums: 
 
 #include <iostream>
 #include <vector>
