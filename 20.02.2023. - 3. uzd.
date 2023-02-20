@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int main()
+{
+	vector<string>student{"Anna", "Antons", "Vlads", "Artemijs"};
+	vector<string>mark{ "3", "8", "7", "4"};
+	int i = 0; 
+	string a;
+	bool fnf = false; 
+	cin >> a; 
+		do {
+			if (a == mark[i]) {
+				cout << student[i] << " "; fnf = true;
+			}
+		
+				i++;
+			}
+		while (i < mark.size()); 
+		if (fnf == false) {
+			cout << "Student not found :(";
+		}
+	return 0;
+}
