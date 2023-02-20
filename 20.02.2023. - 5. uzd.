@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int main()
+{
+	vector<string>svetki { "Teva diena", "Helovins", "Lachpleshu diena", "Latvijas Republikas proklamešanas diena"};
+	vector<string>datums{ "11.09.","31.10.", "11.11.", "18.11."};
+	int i = 0;
+	string answer;
+	cout << " Would you like to see Latvian national holidays? ";
+	cin >> answer;
+	if (answer == "yes")
+		do {
+
+			cout << svetki[i] << " - " << datums[i] << " ";
+			i++;
+		} while (i < datums.size());
+	else cout << "Good bye!";
+
+	return 0;
+}
