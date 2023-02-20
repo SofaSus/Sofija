@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int main()
+{
+	vector<int>num{ 2, 3, 5, 7 };
+	int i = 0;
+
+	do {
+
+		cout << num[i] * num[i] << " ";
+		i++;
+	} while (i < num.size());
+
+	return 0;
+}
