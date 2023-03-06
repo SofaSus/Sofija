@@ -1,0 +1,28 @@
+-- create
+CREATE TABLE WEATHER (
+  empId INTEGER PRIMARY KEY,
+  dayoftheweek TEXT NOT NULL,
+  date TEXT NOT NULL,
+  weatherconditions TEXT NOT NULL,
+  temperature INTEGE NOT NULL
+);
+
+-- insert
+INSERT INTO WEATHER VALUES (0001, 'Monday', '13.02.23.', 'Sunny', +2);
+INSERT INTO WEATHER VALUES (0002, 'Tuesday', '14.02.23.', 'Rainy', +1);
+INSERT INTO WEATHER VALUES (0003, 'Wednesday', '15.02.23.', 'Cloudy', +1);
+INSERT INTO WEATHER VALUES (0004, 'Thurstday', '16.02.23.', 'Rainy', +4);
+INSERT INTO WEATHER VALUES (0005, 'Friday', '17.02.23.', 'Cloudy', +2);
+INSERT INTO WEATHER VALUES (0006, 'Saturday', '18.02.23.', 'Windy', +2);
+INSERT INTO WEATHER VALUES (0007, 'Sunday', '19.02.23.', 'Snow', -1);
+INSERT INTO WEATHER VALUES (0008, 'Monday', '20.02.23.', 'Snow', -3);
+INSERT INTO WEATHER VALUES (0009, 'Tuesday', '21.02.23.', 'Sunny', -8);
+INSERT INTO WEATHER VALUES (0010, 'Wednesday', '22.02.23.', 'Cloudy', -2);
+INSERT INTO WEATHER VALUES (0011, 'Thurstday', '23.02.23.', 'Windy', 0);
+INSERT INTO WEATHER VALUES (0012, 'Friday', '24.02.23.', 'Rainy', +3);
+INSERT INTO WEATHER VALUES (0013, 'Saturday', '25.02.23.', 'Sunny', +5);
+INSERT INTO WEATHER VALUES (0014, 'Sunday', '26.02.23.', 'Sunny', +3);
+ 
+-- fetch
+SELECT * FROM WEATHER WHERE temperature > 0;
+SELECT * FROM WEATHER WHERE dayoftheweek = 'Tuesday' AND weatherconditions = 'Rainy';
