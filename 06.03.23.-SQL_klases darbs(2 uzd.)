@@ -1,0 +1,17 @@
+CREATE TABLE salaries (
+  salary INT PRIMARY KEY,
+  position VARCHAR(50)
+  );
+
+INSERT INTO salaries (salary, position)
+VALUES (12000 , "Leading financial consultant"), 
+(8000, "Head of HR department"), 
+(13000, "Developer team lead"), 
+(15000, "Executive director");
+
+SELECT*FROM salaries WHERE salary = 20000;
+SELECT*FROM salaries WHERE salary = 15000;
+SELECT AVG(salary) FROM salaries;
+SELECT MAX(salary) FROM salaries;
+SELECT MIN(salary) FROM salaries;
+SELECT*FROM salaries WHERE salary > 10000; 
