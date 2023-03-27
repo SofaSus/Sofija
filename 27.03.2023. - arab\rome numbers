@@ -10,7 +10,7 @@ int main()
 	int answer;
 	cout << "Enter an arab number(1-20): ";
 	cin >> answer;
-	if (answer > 20 || answer < 0)
+	if (answer > 20 || answer < 1)
 		cout << "Error! Not valid number.";
 	else
 	{
