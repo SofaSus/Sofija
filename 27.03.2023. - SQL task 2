@@ -1,0 +1,28 @@
+-- create
+CREATE TABLE EMPLOYEE (
+empId INTEGER NOT NULL,
+first_name TEXT NOT NULL,
+last_name TEXT NOT NULL,
+cust_id INTEGER NOT NULL,
+cust_name TEXT NOT NULL,
+city_name TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Thomas (Neo)', 'Anderson', 0001, 'Jewelery Store', 'London');
+INSERT INTO EMPLOYEE VALUES (0001, 'Thomas (Neo)', 'Anderson', 0002, 'Bakery', 'London');
+INSERT INTO EMPLOYEE VALUES (0001, 'Thomas (Neo)', 'Anderson', 0003, 'Cafe', 'London');
+INSERT INTO EMPLOYEE VALUES (0001, 'Thomas (Neo)', 'Anderson', 0004, 'Restaurant', 'London');
+INSERT INTO EMPLOYEE VALUES (0002, 'Agent', 'Smith', 0001, 'Jewelery Store', 'Cardiff');
+INSERT INTO EMPLOYEE VALUES (0002, 'Agent', 'Smith', 0002, 'Bakery', 'Cardiff');
+INSERT INTO EMPLOYEE VALUES (0002, 'Agent', 'Smith', 0003, 'Cafe', 'Cardiff');
+INSERT INTO EMPLOYEE VALUES (0002, 'Agent', 'Smith', 0004, 'Restaurant', 'Cardiff');
+
+-- fetch
+SELECT * FROM EMPLOYEE
+SELECT * FROM EMPLOYEE WHERE cust_name = 'Bakery';
+SELECT * FROM EMPLOYEE WHERE cust_id = 0004 AND last_name = 'Anderson';
+SELECT AVG(cust_id) FROM EMPLOYEE;
+SELECT MAX(cust_id) FROM EMPLOYEE;
+SELECT MIN(cust_id) FROM EMPLOYEE;
+SELECT*FROM EMPLOYEE WHERE first_name = 'Agent' AND city_name = 'London';
